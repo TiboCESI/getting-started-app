@@ -18,7 +18,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
       
       - name: Verification connexion DockerHub
-        run: docker run tibocesi/getting-started-app
+        run: docker run tibocesi/Hello-World
 
       - name: Verification connexion DockerHub
         run: docker ps
