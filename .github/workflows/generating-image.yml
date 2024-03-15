@@ -23,5 +23,5 @@ jobs:
           context: .
           push: true
           tags:
-            TiboCESI-docker-image:latest
-            TiboCESI-docker-image:${{ github.sha }}
+            TiboCESI/TiboCESI-docker-image:latest
+            TiboCESI/TiboCESI-docker-image:${{ github.sha }}
