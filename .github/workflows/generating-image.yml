@@ -6,7 +6,7 @@ jobs:
 
     steps:
       - name: Checkout du code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: List directory contents and save to file
         run: tree
@@ -21,7 +21,7 @@ jobs:
           password: ${{ secrets.DOCKER_TOKEN }}
 
       - name: Construction et déploiement
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v3
         with:
           push: true
           tags: tibobzhcesi/getting-started:v1
